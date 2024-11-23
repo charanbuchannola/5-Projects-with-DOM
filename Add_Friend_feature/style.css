@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+main .card {
+  width: 40vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 1.5em;
+  border-radius: 10px;
+  align-items: center;
+}
+main .card .box {
+  width: 75%;
+  height: 40%;
+  margin-top: 4em;
+  border-radius: 10px;
+}
+main .card .box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .card h1 {
+  font-size: 3em;
+}
+main .card h2 {
+  font-size: 2em;
+  color: red;
+}
+main .card .btns {
+  display: inline-block;
+}
+main .card .btns .remove {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+main .card .btns .add {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}/*# sourceMappingURL=style.css.map */
