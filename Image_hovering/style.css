@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+main .column {
+  display: flex;
+  align-items: center;
+}
+main .column img {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+}
+main .column h1 {
+  font-size: 2em;
+}/*# sourceMappingURL=style.css.map */
