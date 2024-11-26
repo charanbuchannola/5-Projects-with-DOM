@@ -15,11 +15,13 @@ main {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  gap: 1em;
 }
 main .column {
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 50vh;
 }
 main .column img {
   width: 7em;
@@ -30,6 +32,8 @@ main .column img {
   -o-object-position: center;
      object-position: center;
   position: absolute;
+  opacity: 0;
+  transition: all linear 0.3s;
 }
 main .column h1 {
   font-size: 2em;
