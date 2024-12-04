@@ -139,10 +139,11 @@ main .clock .hands {
 }
 main .clock .hands .hour-hand {
   position: absolute;
-  width: 3%;
-  height: 30%;
+  width: 2%;
+  height: 25%;
   background-color: rgb(219, 198, 198);
   transform-origin: center;
+  border-radius: 10px;
 }
 main .clock .hands .minute-hand {
   position: absolute;
@@ -161,4 +162,11 @@ main .clock .hands .second-hand {
   transform-origin: center;
   transform: rotate(60deg) translateY(-50%);
   transition: transform 1s ease;
+}
+main .clock .hands .round {
+  width: 5%;
+  height: 5%;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(208, 25, 25);
 }/*# sourceMappingURL=style.css.map */
