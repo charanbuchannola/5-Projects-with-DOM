@@ -1,5 +1,6 @@
 var img = document.querySelector(" img");
 var main = document.querySelector("main");
+var button = document.querySelector("button");
 
 moveX = 0;
 moveY = 0;
@@ -24,4 +25,9 @@ document.addEventListener("keydown", function (dets) {
   } else {
     img.style.opacity = 1;
   }
+
+  button.addEventListener("click", () => {
+    img.style.left = 0;
+    img.style.top = 0;
+  });
 });

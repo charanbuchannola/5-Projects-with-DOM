@@ -29,6 +29,16 @@ main .chutki img {
   width: 200px;
   height: 200px;
 }
+main .chutki button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 main .box {
   display: flex;
   justify-content: flex-end;
