@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  font-size: 2em;
+  color: white;
+}
+main .clock {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px 20px rgba(0, 0, 0, 0.5);
+  background-color: azure;
+  position: relative;
+}
+main .clock .numbers {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+main .clock .numbers .number {
+  position: absolute;
+  height: 100%;
+}
+main .clock .numbers .one {
+  transform: rotate(30deg);
+}
+main .clock .numbers .one span {
+  transform: rotate(-30deg);
+  position: absolute;
+}
+main .clock .numbers .two {
+  transform: rotate(60deg);
+}
+main .clock .numbers .two span {
+  transform: rotate(-60deg);
+  position: absolute;
+}
+main .clock .numbers .three {
+  transform: rotate(90deg);
+}
+main .clock .numbers .three span {
+  transform: rotate(-90deg);
+  position: absolute;
+}
+main .clock .numbers .four {
+  transform: rotate(120deg);
+}
+main .clock .numbers .four span {
+  transform: rotate(-120deg);
+  position: absolute;
+}
+main .clock .numbers .five {
+  transform: rotate(150deg);
+}
+main .clock .numbers .five span {
+  transform: rotate(-150deg);
+  position: absolute;
+}
+main .clock .numbers .six {
+  transform: rotate(180deg);
+}
+main .clock .numbers .six span {
+  transform: rotate(-180deg);
+  position: absolute;
+}
+main .clock .numbers .seven {
+  transform: rotate(210deg);
+}
+main .clock .numbers .seven span {
+  transform: rotate(-210deg);
+  position: absolute;
+}
+main .clock .numbers .eight {
+  transform: rotate(240deg);
+}
+main .clock .numbers .eight span {
+  transform: rotate(-240deg);
+  position: absolute;
+}
+main .clock .numbers .nine {
+  transform: rotate(270deg);
+}
+main .clock .numbers .nine span {
+  transform: rotate(-270deg);
+  position: absolute;
+}
+main .clock .numbers .ten {
+  transform: rotate(300deg);
+}
+main .clock .numbers .ten span {
+  transform: rotate(-300deg);
+  position: absolute;
+}
+main .clock .numbers .eleven {
+  transform: rotate(330deg);
+}
+main .clock .numbers .eleven span {
+  transform: rotate(-330deg);
+  position: absolute;
+}
+main .clock .numbers .twelve {
+  transform: rotate(360deg);
+}
+main .clock .numbers .twelve span {
+  transform: rotate(-360deg);
+  position: absolute;
+}
+main .clock .hands {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border-radius: 50%;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(126, 86, 30) 1;
+}
+main .clock .hands .hour-hand {
+  position: absolute;
+  width: 3%;
+  height: 30%;
+  background-color: rgb(219, 198, 198);
+  transform-origin: center;
+}
+main .clock .hands .minute-hand {
+  position: absolute;
+  width: 1%;
+  height: 35%;
+  background-color: rgb(222, 186, 186);
+  transform-origin: center;
+  transform: rotate(deg) translateY(-50%);
+  transition: transform 0.5s ease;
+}
+main .clock .hands .second-hand {
+  position: absolute;
+  width: 0.5%;
+  height: 45%;
+  background-color: rgb(255, 0, 0);
+  transform-origin: center;
+  transform: rotate(60deg) translateY(-50%);
+  transition: transform 1s ease;
+}/*# sourceMappingURL=style.css.map */

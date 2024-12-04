@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  font-size: 2em;
+  color: white;
+
+  .clock {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px 20px rgba(0, 0, 0, 0.5);
+    background-color: azure;
+    position: relative;
+
+    .numbers {
+      height: 100%;
+      width: 100%;
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      font-size: 30px;
+      font-weight: bold;
+      color: black;
+
+      .number {
+        position: absolute;
+        height: 100%;
+      }
+      .one {
+        transform: rotate(30deg);
+        span {
+          transform: rotate(-30deg);
+          position: absolute;
+        }
+      }
+      .two {
+        transform: rotate(60deg);
+        span {
+          transform: rotate(-60deg);
+          position: absolute;
+        }
+      }
+      .three {
+        transform: rotate(90deg);
+        span {
+          transform: rotate(-90deg);
+          position: absolute;
+        }
+      }
+      .four {
+        transform: rotate(120deg);
+        span {
+          transform: rotate(-120deg);
+          position: absolute;
+        }
+      }
+      .five {
+        transform: rotate(150deg);
+        span {
+          transform: rotate(-150deg);
+          position: absolute;
+        }
+      }
+      .six {
+        transform: rotate(180deg);
+
+        span {
+          transform: rotate(-180deg);
+          position: absolute;
+        }
+      }
+      .seven {
+        transform: rotate(210deg);
+        span {
+          transform: rotate(-210deg);
+          position: absolute;
+        }
+      }
+      .eight {
+        transform: rotate(240deg);
+        span {
+          transform: rotate(-240deg);
+          position: absolute;
+        }
+      }
+      .nine {
+        transform: rotate(270deg);
+        span {
+          transform: rotate(-270deg);
+          position: absolute;
+        }
+      }
+      .ten {
+        transform: rotate(300deg);
+        span {
+          transform: rotate(-300deg);
+          position: absolute;
+        }
+      }
+      .eleven {
+        transform: rotate(330deg);
+        span {
+          transform: rotate(-330deg);
+          position: absolute;
+        }
+      }
+      .twelve {
+        transform: rotate(360deg);
+        span {
+          transform: rotate(-360deg);
+          position: absolute;
+        }
+      }
+    }
+    .hands {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      border-radius: 50%;
+      top: 0;
+
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(126, 86, 30) opacity($color: white);
+
+      .hour-hand {
+        position: absolute;
+        width: 3%;
+        height: 30%;
+        background-color: rgb(219, 198, 198);
+        transform-origin: center;
+
+        // transform: rotate(0deg);
+      }
+      .minute-hand {
+        position: absolute;
+        width: 1%;
+        height: 35%;
+        background-color: rgb(222, 186, 186);
+        transform-origin: center;
+        transform: rotate(deg) translateY(-50%);
+        transition: transform 0.5s ease;
+      }
+      .second-hand {
+        position: absolute;
+        width: 0.5%;
+        height: 45%;
+        background-color: rgb(255, 0, 0);
+        transform-origin: center;
+        transform: rotate(60deg) translateY(-50%);
+        transition: transform 1s ease;
+      }
+    }
+  }
+}
